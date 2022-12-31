@@ -1151,21 +1151,28 @@ class start(default_cmds.MuxCommand):
 
     def func(self):
         self.caller.msg("|bWelcome to the game!")
-        yield 2
+        yield 1
         self.caller.msg("Use 'north,' 'northeast,' 'east,' 'southeast,' 'south,' 'southwest,' 'west,' and 'northwest' to travel in said directions.")
-        yield 4
+        yield 1
         self.caller.msg("If the text does not give you what place is in what direction, put any of the direction commands to proceed onto the next scene.")
-        yield 4
+        yield 1
         self.caller.msg("To restart the game, use any of the direction commands when you reach the end. (You can tell it's the end when the credits are given).")
-        yield 4
+        yield 1
+        self.caller.msg("Alternatively, you can use the command 'start' to go through these messages again and start from the beginning anytime in the game.")
+        yield 1
         self.caller.msg("Because of internal consistency bugs, it's highly recommended that you visit these places in the story: the house at the top of the hill, the island, and the log cabin, *before* you go to the large mansion in the forest.")
-        yield 6
+        yield 1
         self.caller.msg("There may be understanding issues in the plotline if these places are not visited, e.g. having a character reference something they said to you, but you didn't go to that place, and didn't hear their original talk.  Or smaller issues like a person you've not met before being referred to as 'the person' instead of 'a person'.")
-        yield 8
+        yield 1
         self.caller.msg("These bugs would take a disproportionate amount of time to fix, so I've decided to leave them be.")
-        yield 4
+        yield 1
         self.caller.msg("Anyways, hope you have fun!")
-        yield 4
+        yield 1
+        room_list[0].here = True
+        room_list[0].times = 1
+        for x in range(1, 35):
+            room_list[x].here = False
+            room_list[x].times = 0
         self.caller.msg(s01)
         self.caller.msg("-------------------------------------")
 
