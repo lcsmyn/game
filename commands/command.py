@@ -1167,6 +1167,7 @@ class start(default_cmds.MuxCommand):
         self.caller.msg("Anyways, hope you have fun!")
         yield 4
         self.caller.msg(s01)
+        self.caller.msg("-------------------------------------")
 
 
 class north(default_cmds.MuxCommand):
@@ -1188,6 +1189,7 @@ class north(default_cmds.MuxCommand):
                     self.caller.msg(y.content)
                 else:
                     self.caller.msg(y.content2)
+                self.caller.msg("-------------------------------------")
                 break
 
 
@@ -1210,6 +1212,7 @@ class northeast(default_cmds.MuxCommand):
                     self.caller.msg(y.content)
                 else:
                     self.caller.msg(y.content2)
+                self.caller.msg("-------------------------------------")
                 break
 
 
@@ -1232,6 +1235,7 @@ class east(default_cmds.MuxCommand):
                     self.caller.msg(y.content)
                 else:
                     self.caller.msg(y.content2)
+                self.caller.msg("-------------------------------------")
                 break
 
 class southeast(default_cmds.MuxCommand):
@@ -1253,6 +1257,7 @@ class southeast(default_cmds.MuxCommand):
                     self.caller.msg(y.content)
                 else:
                     self.caller.msg(y.content2)
+                self.caller.msg("-------------------------------------")
                 break
 
 class south(default_cmds.MuxCommand):
@@ -1274,6 +1279,7 @@ class south(default_cmds.MuxCommand):
                     self.caller.msg(y.content)
                 else:
                     self.caller.msg(y.content2)
+                self.caller.msg("-------------------------------------")
                 break
 
 class southwest(default_cmds.MuxCommand):
@@ -1295,6 +1301,7 @@ class southwest(default_cmds.MuxCommand):
                     self.caller.msg(y.content)
                 else:
                     self.caller.msg(y.content2)
+                self.caller.msg("-------------------------------------")
                 break
 
 class west(default_cmds.MuxCommand):
@@ -1316,6 +1323,7 @@ class west(default_cmds.MuxCommand):
                     self.caller.msg(y.content)
                 else:
                     self.caller.msg(y.content2)
+                self.caller.msg("-------------------------------------")
                 break
 
 class northwest(default_cmds.MuxCommand):
@@ -1338,6 +1346,7 @@ class northwest(default_cmds.MuxCommand):
                     self.caller.msg(y.content)
                 else:
                     self.caller.msg(y.content2)
+                self.caller.msg("-------------------------------------")
                 break
 
 # -------------------------------------------------------------
